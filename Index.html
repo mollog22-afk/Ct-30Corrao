@@ -26,10 +26,13 @@ HTML
 </head>
 <body class="bg-gray-100 min-h-screen font-sans">
 
-    <header class="bg-white border-b-4 border-nodo p-4 mb-6 shadow-md sticky top-0 z-50">
+<header class="bg-white border-b-4 border-nodo p-4 mb-6 shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center">
-                <img src="nero-1536x336.png" alt="Agenzia Corrao" class="h-14 md:h-20 w-auto object-contain">
+                <!-- Sostituito con il nome file corretto 'nero.png' e ottimizzato il dimensionamento -->
+                <img src="nero.png" alt="Agenzia Corrao" class="h-auto w-48 md:w-64 object-contain" onerror="this.style.display='none'; document.getElementById('logo-fallback').classList.remove('hidden');">
+                <!-- Testo di backup se l'immagine non viene trovata nella cartella -->
+                <span id="logo-fallback" class="hidden text-xl font-bold tracking-wider text-gray-800">AGENZIA CORRAO</span>
             </div>
             
             <div class="text-center md:text-right">
@@ -37,7 +40,9 @@ HTML
                 <p class="text-[10px] text-gray-500 font-bold uppercase">Agenzia Corrao - Diagnosi Energetica e Consulenza EGE</p>
             </div>
         </div>
-    </header>
+    </header>     
+            <div class="text-center md:text-right">
+         
 
     <main class="max-w-5xl mx-auto px-4 pb-12">
         <div class="mb-6 bg-blue-50 border-l-4 border-blue-500 p-3 text-[11px] text-blue-800 uppercase font-bold no-print">
